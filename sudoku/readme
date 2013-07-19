@@ -1,0 +1,9 @@
+Sudoku
+
+Place digits 1-9 in a 9x9 board such that no number repeats in the same row,
+same column or any of the nine 3x3 sub-boards.
+But you knew this already, didn't you?
+
+sudoku takes the numbers in the board, rowwise, as input. If a cell has already
+been filled, give the number in the cell. If not, leave it as 0. See in for an
+example
