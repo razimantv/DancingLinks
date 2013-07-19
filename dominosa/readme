@@ -1,0 +1,8 @@
+Dominosa
+
+This is a game in which you are given a board filled with numbers. You need to 
+tile the board with dominoes such that no domino appears more than once. You can
+play the game at http://www.puzzle-dominosa.com/
+
+dominosa reads the height of the board and then the numbers in the board rowwise
+and outputs a solution placement if it exists. See in and out for an example.

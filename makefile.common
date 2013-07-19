@@ -1,0 +1,8 @@
+CC = g++
+CPPFLAGS = -O3 -W -Wall -Wno-unused-result -Wno-sign-compare
+
+commonobjs = ../DancingLinks/DancingLinks.o ../DancingLinks/DancingLinksCell.o\
+						 ../DancingLinks/DancingLinksColumn.o
+
+commonhdrs = ../DancingLinks/DancingLinks.h ../DancingLinks/DancingLinksCell.h\
+						 ../DancingLinks/DancingLinksColumn.h

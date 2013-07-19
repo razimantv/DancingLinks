@@ -1,0 +1,9 @@
+N-queens problem
+
+Count the number of ways of placing N queens on an NxN chessboard such that no
+two of them attack each other.
+
+nqueens takes two integers as input
+First integer is N, the size of the board
+Second integer T specifies whether only the total number of solutions is needed
+(T=0) or whether all solutions should be listed (T!=0)
