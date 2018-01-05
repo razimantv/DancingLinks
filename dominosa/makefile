@@ -8,4 +8,4 @@ dominosa: dominosa.o $(commonobjs) $(commonhdrs)
 
 .PHONY: clean
 clean:
-	rm *.o dominosa
+	rm -f *.o dominosa

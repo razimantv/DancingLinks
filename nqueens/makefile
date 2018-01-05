@@ -8,4 +8,4 @@ nqueens: nqueens.o $(commonobjs) $(commonhdrs)
 
 .PHONY: clean
 clean:
-	rm *.o nqueens
+	rm -f *.o nqueens

@@ -8,4 +8,4 @@ sudoku: sudoku.o $(commonobjs) $(commonhdrs)
 
 .PHONY: clean
 clean:
-	rm *.o sudoku
+	rm -f *.o sudoku

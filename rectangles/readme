@@ -1,0 +1,9 @@
+Rectangles/Shihaku
+
+This is a game in which you are given a rectangular board in which some cells
+are filled with numbers. The goal is to partition the board into rectangles
+such that every rectangle consists of exactly one filled cell with value equal
+to its area
+
+You can play the game online at
+https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/rect.html
