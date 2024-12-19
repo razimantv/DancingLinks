@@ -18,8 +18,6 @@
 #include <cassert>
 #include <cstdio>
 #include <cstdlib>
-#include <queue>
-#include <set>
 
 #include "DancingLinks.h"
 #include "DancingLinksCell.h"
@@ -168,8 +166,8 @@ bool DancingLinks::solve(std::vector<std::vector<int> > &allsolutions,
     if (solve(allsolutions, cursolution, allneeded)) flag = true;
 
     // Unremove all those columns
-    for (DancingLinksCell *ptr2 = ptr->right_ptr(); ptr2 != ptr;
-         ptr2 = ptr2->right_ptr()) {
+    for (DancingLinksCell *ptr2 = ptr->left_ptr(); ptr2 != ptr;
+         ptr2 = ptr2->left_ptr()) {
       ptr2->column_ptr()->UnremoveColumn();
     }
     cursolution.pop_back();
