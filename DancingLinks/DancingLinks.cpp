@@ -127,12 +127,14 @@ void DancingLinks::Destroy() {
 }
 
 bool DancingLinks::solve(std::vector<std::vector<int> > &allsolutions,
-                         std::vector<int> &cursolution, bool allneeded) {
+                         std::vector<int> &cursolution, bool allneeded, int maxsel) {
   if (dummycolumn_->right_ptr()->essential() == false) {
     // No more constraints left to be satisfied. Success
     allsolutions.push_back(cursolution);
     return true;
   }
+  if ((maxsel != -1) && (cursolution.size() >= maxsel))
+    return false;
 
   // Find the essential column with the lowest degree
   DancingLinksColumn *chosencolumn = dummycolumn_->right_ptr();
@@ -163,7 +165,7 @@ bool DancingLinks::solve(std::vector<std::vector<int> > &allsolutions,
     }
 
     // Recurse to solve the modified board
-    if (solve(allsolutions, cursolution, allneeded)) flag = true;
+    if (solve(allsolutions, cursolution, allneeded, maxsel)) flag = true;
 
     // Unremove all those columns
     for (DancingLinksCell *ptr2 = ptr->left_ptr(); ptr2 != ptr;

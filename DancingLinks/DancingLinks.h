@@ -47,5 +47,6 @@ class DancingLinks {
 
   // Solve the problem
   bool solve(std::vector<std::vector<int> > &allsolutions,
-             std::vector<int> &cursolution, bool allneeded = false);
+             std::vector<int> &cursolution, bool allneeded = false,
+             int maxsel = -1);
 };
