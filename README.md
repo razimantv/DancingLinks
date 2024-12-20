@@ -9,3 +9,4 @@ Current problems solved are:
 * [Sudoku](https://en.wikipedia.org/wiki/Sudoku)
 * [Dominosa](http://www.puzzle-dominosa.com/)
 * [Rectangles/Shihaku](https://en.wikipedia.org/wiki/Shikaku)
+* [Spangram (NYT Strands)](https://www.nytimes.com/games/strands)
