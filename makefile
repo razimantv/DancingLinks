@@ -1,4 +1,4 @@
-all: dominosa sudoku nqueens rectangles
+all: dominosa sudoku nqueens rectangles spangram
 
 .PHONY: dominosa
 dominosa:
@@ -16,6 +16,10 @@ sudoku:
 rectangles:
 	cd ./rectangles ; make rectangles
 
+.PHONY: spangram
+spangram:
+	cd ./spangram ; make spangram
+
 .PHONY: clean
 clean:
 	cd ./DancingLinks; make clean
@@ -23,3 +27,4 @@ clean:
 	cd ./nqueens; make clean
 	cd ./sudoku; make clean
 	cd ./rectangles; make clean
+	cd ./spangram; make clean
